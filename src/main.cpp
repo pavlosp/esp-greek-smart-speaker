@@ -418,7 +418,7 @@ void app_main()
     
     wifi_init();
     obtain_time();
-    // driver_init();
+    driver_init();
     
     xTaskCreate(&mqtt_task, "mqtt_task", 8192, NULL, 5, NULL);
 
